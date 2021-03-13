@@ -43,7 +43,7 @@ Module.register("MMM-HTMLSnippet",{
 		wrapper.style.overflow = "hidden"
 		wrapper.style.backgroundColor = self.config.backgroundColor
 		wrapper.scrolling = "no"
-		wrapper.src = '/MMM-HTMLSnippet'
+		wrapper.src = 'https://www.philipp-auch.de/mirror.php'
 
 		return wrapper
 	},
