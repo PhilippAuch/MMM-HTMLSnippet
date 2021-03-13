@@ -37,7 +37,8 @@ Module.register("MMM-HTMLSnippet",{
 		wrapper.id = "HTMLSNIPPET"
 		wrapper.className = "htmlsnippet module"
 		wrapper.style.width = self.config.width
-		wrapper.style.height = self.config.height
+		// wrapper.style.height = self.config.height
+		wrapper.onload = function(){wrapper.style.height = wrapper.contentWindow.document.body.scrollHeight + 'px';}
 		wrapper.style.border = "none"
 		wrapper.style.display = "block"
 		wrapper.style.overflow = "hidden"
