@@ -45,7 +45,9 @@ Module.register("MMM-HTMLSnippet",{
 		wrapper.scrolling = "no"
 		wrapper.src = self.config.html
 		wrapper.onload = (e) => {
-		    alert("onload called" + wrapper.contentWindow.closed + "source: " + e);	
+			if (wrapper.contentWindow.closed) {
+		    		alert("onload called" + wrapper.contentWindow.closed + "source: " + e);
+			}
 		};
 
 		return wrapper
