@@ -19,6 +19,13 @@ Module.register("MMM-HTMLSnippet",{
 		// Schedule update timer.
 		this.scheduleUpdate(2000);
 	},
+	
+	getScripts: function() {
+		return [
+			'https://rawgit.com/davidjbradshaw/iframe-resizer/master/js/iframeResizer.min.js'
+		]
+	},
+	
 
 	scheduleUpdate: function(delay) {
 		let self = this
