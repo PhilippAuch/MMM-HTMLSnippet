@@ -45,7 +45,7 @@ Module.register("MMM-HTMLSnippet",{
 		wrapper.style.backgroundColor = self.config.backgroundColor
 		wrapper.scrolling = "no"
 		wrapper.src = self.config.html
-		iFrameResize({ log: true }, '#myIframe')
+		iFrameResize({ log: true }, '#HTMLSNIPPET')
 		wrapper.onload = (e) => {
 			if (wrapper.contentWindow.closed) {
 		    		alert("onload called" + wrapper.contentWindow.closed + "source: " + e);
